@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints "with proper grammar, but the outcome is a piece of art," followed newline
- * return/ Always O.
+ * Return: Always O.
  */
 int main(void)
 {
