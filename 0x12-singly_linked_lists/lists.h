@@ -1,5 +1,5 @@
-#ifndef CODING_H
-#define CODING_H
+#ifndef _CODING_H_
+#define _CODING_H_
 #include <stdio.h>
 /**
  * struct list_s - singly linked list
