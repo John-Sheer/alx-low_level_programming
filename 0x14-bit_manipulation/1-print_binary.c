@@ -1,19 +1,30 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _pow - function to  calculates (base ^ power)
- * @base: base of the exponent
- * @power: power of the exponent
+ * print_binary - print binary representation of a number
  *
- * Return: value of (base ^ power)
+ * @n: decimal number to print as binary
  */
-unsigned long int _pow(unsigned int base, unsigned int power)
+void print_binary(unsigned long int n)
 {
-	unsigned long int num;
-	unsigned int a;
+	unsigned long int temp;
+	int shifts;
 
-	num = 1;
-	for (a = 1; a <= power; a++)
-		num *= base;
-	return (num);
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
+
+	for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++)
+		;
+
+	for (; shifts >= 0; shifts--)
+	{
+		if ((n >> shifts) & 1)
+			printf("1");
+		else
+			printf("0");
+	}
 }
