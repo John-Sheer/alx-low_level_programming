@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
+ * * clear_bit - prog that sets the value of a bit to 0 at a given index
  * @n: parameter
  * @index: index
  * Return: 1 if success, -1 if error
